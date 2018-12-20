@@ -1,0 +1,51 @@
+.focus{
+    padding: 15rem 30rem;
+
+    &__heading{
+        font-size: 3.2rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 300;
+        letter-spacing: .2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__subtext{
+        font-size: 1.6rem;
+        text-align: center;
+        font-weight: 300;
+        line-height: 150%;
+    }
+
+    &__services{
+        margin-top: 10rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-column-gap: 10rem;
+        grid-row-gap: 15rem;
+
+        &__box{
+            text-align: center;
+
+            i{
+                color: rgb(0, 116, 217);
+                font-size: 9rem;
+                margin-bottom: 2rem;
+            }
+
+            &--heading{
+                font-size: 1.8rem;
+                font-weight: 300;
+                text-transform: uppercase;
+                margin-bottom: 2rem;
+            }
+
+            p{
+                font-size: 1.5rem;
+                font-weight: 300;
+                line-height: 150%;
+            }
+        }
+    }
+}

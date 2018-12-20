@@ -1,0 +1,45 @@
+.footer{
+    background: $color-black;
+    margin-top: 10rem;
+    padding: 12rem;
+
+    color: #bbb;
+
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        padding-bottom: 5rem;
+        border-bottom: .1rem solid #bbb;
+    }
+
+    &__about{
+        &--header{
+            color: $color-white;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+    }
+
+    &__items{
+        font-size: 1.5rem;
+
+        i{
+            margin-right: 2rem;
+            color: $color-white;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 2.5rem;
+        }
+       
+    }
+
+    &__copyright{
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+}

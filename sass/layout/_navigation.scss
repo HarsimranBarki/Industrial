@@ -1,0 +1,37 @@
+.navbar{
+    background-color: #222;
+    color: #efefef;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
+    &__container{
+        padding:2rem 5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+       cursor: default;
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__items{
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+
+        &:hover{
+            color: #ccc;
+        }
+    }   
+}

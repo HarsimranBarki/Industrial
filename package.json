@@ -1,0 +1,11 @@
+{
+  "name": "industrial",
+  "version": "1.0.0",
+  "description": "Industrial website template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harsimran Singh",
+  "license": "MIT"
+}

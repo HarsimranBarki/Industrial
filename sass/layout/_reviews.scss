@@ -1,0 +1,53 @@
+.reviews{
+    padding: 10rem 30rem;
+    text-align: center;
+    color: $color-black;
+
+    &__heading{
+        font-weight: 300;
+    }
+
+    &__container{
+        margin-top: 10rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap:10rem;
+
+        &--boxes{
+            display: block;
+            border-left:1rem solid #ccc;
+            padding: 2rem; 
+            position: relative;
+
+            &--img{
+                height: 4rem;
+                width: 4rem;
+                border-radius: 100%;
+                position: absolute;
+                top:20rem;
+                left: -2rem;
+            }
+
+            .img__subtext{
+                font-size: 1.3rem;
+                color: $color-black;
+                position: absolute;
+                bottom : -5rem;
+                left: 3rem;
+
+                span{
+                    color:rgb(0, 116, 217);
+                    font-weight: 700;
+                }
+            }
+        }
+        
+        p{
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 150%;
+            font-style: italic;
+            text-align: left;
+        }
+    }
+}

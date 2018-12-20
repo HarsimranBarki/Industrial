@@ -1,0 +1,24 @@
+.header{
+    height: 65vh;
+    background: linear-gradient( 135deg, rgb(0, 116, 217), rgba(17, 17, 17, 0.5) ),url(../img/bg-transport.jpg);
+    background-size: cover;
+    
+
+    &__block{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(20rem);
+    }
+
+    &__h1{
+        margin-bottom: 2rem;
+        letter-spacing: .3rem;
+    }
+
+    &__subtext{
+        letter-spacing: .2rem;
+    }
+
+}
