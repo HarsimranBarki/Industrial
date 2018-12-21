@@ -3,14 +3,32 @@
     text-align: center;
     color: $color-black;
 
+    @media screen and (min-width : 1700px){
+        padding: 8rem 20rem;
+    }
+
+    @media screen and (max-width : 1600px){
+        padding: 6rem 18rem;
+     }
+
+     @media screen and (max-width : 650px){
+        padding: 6rem 10rem;
+            }
+
+
+
     &__heading{
         font-weight: 300;
+
+        @media screen and (min-width : 1700px){
+            font-size: 4rem !important;
+        }
     }
 
     &__container{
         margin-top: 10rem;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
         grid-column-gap:10rem;
 
         &--boxes{
@@ -19,21 +37,19 @@
             padding: 2rem; 
             position: relative;
 
-            &--img{
-                height: 4rem;
-                width: 4rem;
-                border-radius: 100%;
-                position: absolute;
-                top:20rem;
-                left: -2rem;
-            }
+            @media screen and (max-width : 1700px){
+                margin-bottom: 2rem;
+             }
+
+            @media screen and (max-width : 1600px){
+                margin-bottom: 3rem;
+             }
 
             .img__subtext{
                 font-size: 1.3rem;
                 color: $color-black;
-                position: absolute;
-                bottom : -5rem;
-                left: 3rem;
+                margin-top: 2rem;
+                margin-left: -10rem;
 
                 span{
                     color:rgb(0, 116, 217);
@@ -48,6 +64,10 @@
             line-height: 150%;
             font-style: italic;
             text-align: left;
+
+            @media screen and (min-width : 1700px){
+                font-size: 2rem;
+            }
         }
     }
 }

@@ -332,6 +332,21 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: 'Raleway', sans-serif; }
+  @media screen and (max-width: 1090px) {
+    html {
+      font-size: 55%; } }
+  @media screen and (max-width: 750px) {
+    html {
+      font-size: 50%; } }
+  @media screen and (max-width: 600px) {
+    html {
+      font-size: 45%; } }
+  @media screen and (max-width: 530px) {
+    html {
+      font-size: 40%; } }
+  @media screen and (max-width: 450px) {
+    html {
+      font-size: 35%; } }
 
 body {
   box-sizing: inherit;
@@ -345,6 +360,9 @@ body {
   top: 0;
   width: 100%;
   z-index: 2; }
+  @media screen and (min-width: 1700px) {
+    .navbar {
+      font-size: 2rem; } }
   .navbar__container {
     padding: 2rem 5rem;
     display: flex;
@@ -368,20 +386,57 @@ body {
   height: 65vh;
   background: linear-gradient(135deg, #0074d9, rgba(17, 17, 17, 0.5)), url(../img/bg-transport-min.jpg);
   background-size: cover; }
+  @media screen and (max-width: 1600px) {
+    .header {
+      height: 50vh; } }
+  @media screen and (max-width: 1090px) {
+    .header {
+      height: 45rem; } }
+  @media screen and (max-width: 450px) {
+    .header {
+      height: 30rem; } }
   .header__block {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     transform: translateY(20rem); }
+    @media screen and (max-width: 450px) {
+      .header__block {
+        height: 30rem;
+        transform: translateY(10rem); } }
   .header__h1 {
     margin-bottom: 2rem;
     letter-spacing: .3rem; }
+    @media screen and (min-width: 1700px) {
+      .header__h1 {
+        font-size: 8rem !important; } }
   .header__subtext {
     letter-spacing: .2rem; }
+    @media screen and (min-width: 1700px) {
+      .header__subtext {
+        font-size: 3rem !important; } }
+    @media screen and (max-width: 420px) {
+      .header__subtext {
+        text-align: center; } }
 
 .focus {
   padding: 15rem 30rem; }
+  @media screen and (min-width: 1700px) {
+    .focus {
+      padding: 15rem 15rem; } }
+  @media screen and (max-width: 1600px) {
+    .focus {
+      padding: 10rem 18rem; } }
+  @media screen and (max-width: 1160px) {
+    .focus {
+      padding: 8rem 15rem; } }
+  @media screen and (max-width: 650px) {
+    .focus {
+      padding: 5rem 10rem; } }
+  @media screen and (max-width: 420px) {
+    .focus {
+      padding: 3rem 5rem; } }
   .focus__heading {
     font-size: 3.2rem;
     text-transform: uppercase;
@@ -389,33 +444,56 @@ body {
     font-weight: 300;
     letter-spacing: .2rem;
     margin-bottom: 2rem; }
+    @media screen and (min-width: 1700px) {
+      .focus__heading {
+        font-size: 4rem !important; } }
   .focus__subtext {
     font-size: 1.6rem;
     text-align: center;
     font-weight: 300;
     line-height: 150%; }
+    @media screen and (min-width: 1700px) {
+      .focus__subtext {
+        font-size: 2rem !important; } }
   .focus__services {
     margin-top: 10rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10rem;
     grid-row-gap: 15rem; }
+    @media screen and (max-width: 530px) {
+      .focus__services {
+        margin-top: 8rem; } }
+    @media screen and (max-width: 420px) {
+      .focus__services {
+        grid-column-gap: 5rem;
+        grid-row-gap: 5rem;
+        margin-top: 5rem; } }
     .focus__services__box {
       text-align: center; }
       .focus__services__box i {
         color: #0074d9;
         font-size: 9rem;
         margin-bottom: 2rem; }
+        @media screen and (min-width: 1700px) {
+          .focus__services__box i {
+            font-size: 10rem; } }
       .focus__services__box--heading {
         font-size: 1.8rem;
         font-weight: 300;
         text-transform: uppercase;
         margin-bottom: 2rem; }
+        @media screen and (min-width: 1700px) {
+          .focus__services__box--heading {
+            font-size: 2.5rem; } }
       .focus__services__box p {
         font-size: 1.5rem;
         font-weight: 300;
         line-height: 150%; }
+        @media screen and (min-width: 1700px) {
+          .focus__services__box p {
+            font-size: 2rem; } }
 
 .company {
   height: 35rem;
@@ -425,49 +503,75 @@ body {
   text-align: center;
   color: #efefef;
   position: relative; }
+  @media screen and (max-width: 1160px) {
+    .company {
+      height: 30rem; } }
+  @media screen and (max-width: 600px) {
+    .company {
+      height: 30rem; } }
   .company__container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media screen and (max-width: 600px) {
+      .company__container {
+        position: relative;
+        padding: 3rem; } }
   .company__heading {
     font-size: 3.2rem;
     margin-bottom: 3rem;
     text-transform: uppercase; }
+    @media screen and (min-width: 1700px) {
+      .company__heading {
+        font-size: 4rem; } }
   .company__subtext {
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 150%; }
+    @media screen and (min-width: 1700px) {
+      .company__subtext {
+        font-size: 2rem; } }
 
 .reviews {
   padding: 10rem 30rem;
   text-align: center;
   color: #222; }
+  @media screen and (min-width: 1700px) {
+    .reviews {
+      padding: 8rem 20rem; } }
+  @media screen and (max-width: 1600px) {
+    .reviews {
+      padding: 6rem 18rem; } }
+  @media screen and (max-width: 650px) {
+    .reviews {
+      padding: 6rem 10rem; } }
   .reviews__heading {
     font-weight: 300; }
+    @media screen and (min-width: 1700px) {
+      .reviews__heading {
+        font-size: 4rem !important; } }
   .reviews__container {
     margin-top: 10rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-column-gap: 10rem; }
     .reviews__container--boxes {
       display: block;
       border-left: 1rem solid #ccc;
       padding: 2rem;
       position: relative; }
-      .reviews__container--boxes--img {
-        height: 4rem;
-        width: 4rem;
-        border-radius: 100%;
-        position: absolute;
-        top: 20rem;
-        left: -2rem; }
+      @media screen and (max-width: 1700px) {
+        .reviews__container--boxes {
+          margin-bottom: 2rem; } }
+      @media screen and (max-width: 1600px) {
+        .reviews__container--boxes {
+          margin-bottom: 3rem; } }
       .reviews__container--boxes .img__subtext {
         font-size: 1.3rem;
         color: #222;
-        position: absolute;
-        bottom: -5rem;
-        left: 3rem; }
+        margin-top: 2rem;
+        margin-left: -10rem; }
         .reviews__container--boxes .img__subtext span {
           color: #0074d9;
           font-weight: 700; }
@@ -477,25 +581,56 @@ body {
       line-height: 150%;
       font-style: italic;
       text-align: left; }
+      @media screen and (min-width: 1700px) {
+        .reviews__container p {
+          font-size: 2rem; } }
 
 .footer {
   background: #222;
   margin-top: 10rem;
   padding: 12rem;
   color: #bbb; }
+  @media screen and (max-width: 1700px) {
+    .footer {
+      margin-top: 0rem; } }
+  @media screen and (max-width: 1160px) {
+    .footer {
+      padding: 8rem; } }
+  @media screen and (max-width: 530px) {
+    .footer {
+      text-align: center; } }
   .footer__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     padding-bottom: 5rem;
     border-bottom: .1rem solid #bbb; }
+    @media screen and (max-width: 530px) {
+      .footer__container {
+        grid-template-columns: repeat(1, 1fr); } }
+  @media screen and (max-width: 530px) {
+    .footer__about {
+      margin-bottom: 3rem; } }
   .footer__about--header {
     color: #efefef;
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-transform: uppercase; }
+    @media screen and (min-width: 1700px) {
+      .footer__about--header {
+        font-size: 3rem; } }
+  @media screen and (min-width: 1700px) {
+    .footer__about--subtext {
+      font-size: 2.5rem; } }
+  @media screen and (max-width: 530px) {
+    .footer__list {
+      display: flex;
+      justify-content: space-around; } }
   .footer__items {
     font-size: 1.5rem; }
+    @media screen and (max-width: 530px) {
+      .footer__items {
+        margin-right: 2rem; } }
     .footer__items i {
       margin-right: 2rem;
       color: #efefef; }
@@ -506,6 +641,9 @@ body {
     margin-top: 2rem;
     font-size: 1.3rem;
     color: #666; }
+    @media screen and (min-width: 1700px) {
+      .footer__copyright {
+        font-size: 2.5rem; } }
 
 .hero-h1 {
   color: #efefef;

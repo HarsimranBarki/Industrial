@@ -2,6 +2,18 @@
     height: 65vh;
     background: linear-gradient( 135deg, rgb(0, 116, 217), rgba(17, 17, 17, 0.5) ),url(../img/bg-transport-min.jpg);
     background-size: cover;
+
+    @media screen and (max-width : 1600px){
+       height: 50vh;
+    }
+
+    @media screen and (max-width : 1090px){
+       height: 45rem;
+      }
+
+      @media screen and (max-width : 450px){
+       height: 30rem;
+           }
     
 
     &__block{
@@ -10,15 +22,33 @@
         flex-direction: column;
         align-items: center;
         transform: translateY(20rem);
+
+        @media screen and (max-width : 450px){
+            height: 30rem;
+
+            transform: translateY(10rem);
+                }
     }
 
     &__h1{
         margin-bottom: 2rem;
         letter-spacing: .3rem;
+
+        @media screen and (min-width : 1700px){
+            font-size: 8rem !important;
+         }
     }
 
     &__subtext{
         letter-spacing: .2rem;
+
+        @media screen and (min-width : 1700px){
+            font-size: 3rem !important;
+         }
+
+         @media screen and (max-width : 420px){
+            text-align: center;
+                }
     }
 
 }

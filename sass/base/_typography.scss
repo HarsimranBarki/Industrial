@@ -7,11 +7,30 @@ html{
     box-sizing: border-box;
     font-size: 62.5%;
     font-family: 'Raleway', sans-serif;
+
+    @media screen and (max-width : 1090px){
+        font-size: 55%;
+      }
+      @media screen and (max-width : 750px){
+      font-size: 50%;
+       }
+       @media screen and (max-width : 600px){
+        font-size: 45%;
+         }
+         @media screen and (max-width : 530px){
+            font-size: 40%;
+              }
+
+              @media screen and (max-width : 450px){
+                font-size: 35%;
+                   }
 }
 
 body{
     box-sizing: inherit;
     font-family: inherit;
+
+   
 }
 
 $color-black : #222;
