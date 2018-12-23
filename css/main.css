@@ -384,7 +384,7 @@ body {
 
 .header {
   height: 65vh;
-  background: linear-gradient(135deg, #0074d9, rgba(17, 17, 17, 0.5)), url(../img/bg-transport-min.jpg);
+  background: linear-gradient(135deg, #0074d9, rgba(17, 17, 17, 0.5)), url(../img/bg-min.jpg);
   background-size: cover; }
   @media screen and (max-width: 1600px) {
     .header {
@@ -497,9 +497,8 @@ body {
 
 .company {
   height: 35rem;
-  background: linear-gradient(to right, rgba(0, 116, 217, 0.8), rgba(0, 116, 217, 0.8)), url(../img/bg-company-min.jpg);
+  background: linear-gradient(to right, rgba(0, 116, 217, 0.8), rgba(0, 116, 217, 0.8)), url(../img/bg-comapny-min.jpg);
   background-size: cover;
-  background-attachment: fixed;
   text-align: center;
   color: #efefef;
   position: relative; }
